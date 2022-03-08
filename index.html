@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP CSharp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1 style="text-align: center; margin-left: 18px">OOP Kérdések & Válaszok</h1>
+
+    <div class="container">
+
+
+
+        <ul>
+            <li>
+        
+                <div class="question">
+                    - Mi az OOP? -
+                </div>          
+                <div class="answer">
+                    - Objektum Orientált Programozás <br> 
+                    - Az objektumok fogalmán alapuló programozási paradigma.
+                     Az objektumok egységbe foglalják az adatokat és a hozzájuk tartozó műveleteket. <br>
+	                -Az objektumok állapotokat rögízetenk. A program egymással kommunikáló objektumok összességéből áll. <br>
+                </div>
+                
+            </li>
+            
+            <li>
+        
+                <div class="question">
+                    - Alap OOP fogalmak -
+                </div>          
+                <div class="answer">
+                    - Asszociáció: Mikor az objektumok egymással együtt működnek, de nem függnek egymástól.<br>
+                    - Aggregáció: Mikor az egyik objektum birtokol egy másikat.<br>
+                    - Kompozíció: Mikor az objektumok együtt működnek egymással és függnek is egymástól.<br>
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az osztály-
+                </div>          
+                <div class="answer">
+                    - Az osztály egy felhasználói típus, amelynek alapján példányok (objektumok) hozhatók létre. <br>
+	                - Az osztály alapvetően adat és metódus (művelet) definíciókat tartalmaz. <br>
+	                - Összetartozó adatok és függvények, eljárások egysége. <br>
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az objektum-
+                </div>          
+                <div class="answer">
+                    - Az osztály példányait nevezzük így. <br>
+	                - Információt tárol, kérésre műveleteket végez. <br>
+	                - Van állapota, viselkedése és futásidőben azonosítható. <br>
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az egységbezárás-
+                </div>          
+                <div class="answer">
+                    - Azt fejezi ki, hogy az összetartozó adatok és függvények, eljárások együtt vannak, egy egységbe tartoznak. <br>
+	                - Lényege, hogy az objektum állapotát csak a műveletein keresztül módosíthatjuk.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a polimorfizmus-
+                </div>          
+                <div class="answer">
+                    - Amennyiben egy továbbfejlesztett osztályban egy, az ősétől örökölt metódust felülírunk, átalakítunk, a változatlan formában örökölt metódusok képesek
+                    legyenek ezen új verziót automatikusan használni.
+                    Ezt jellemzően a virtuális metódusok segítségével szokták támogatni a programozási nyelvek.
+                    2 féle polimorfizmus van: 
+                    1. statikus (Early binding), mely compile timeban történik, pl overloading
+                    2. dinamikus (Late binding), mely runtimeban történik, pl overriding
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az öröklődés-
+                </div>          
+                <div class="answer">
+                    - Olyan osztályok között értelmezett viszony, amely segítségével egy általánosabb típusból (ősosztály) egy sajátosabb típust tudunk létrehozni (utódosztály). <br>
+ 	                - Az utódosztály adatokat és műveleteket (viselkedésmódot) örököl, kiegészíti ezeket saját adatokkal és műveletekkel, illetve felülírhat bizonyos műveleteket. <br>
+	                - A kód újrafelhasználásának egyik módja. <br>
+	                - Megkülönböztetünk egyszeres és többszörös örökítést. <br> 
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a konstruktor-
+                </div>          
+                <div class="answer">
+                    - Az a művelet, amely inicializálja az objektumot. Automatikusan hívódik. <br>
+	                - Egy osztályhoz annyiféle konstruktort készítünk, ahányféle képpen lehetővé tesszük a példányok inicializálását.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a destrktor-
+                </div>          
+                <div class="answer">
+                    - A konstruktorral ellentétes művelet, általában a konstruktorban lekötött erőforrásokat szabadítja fel. <br>
+	                - Az objektum megsemmisítése előtt hajtódik végre és automatikusan hívódik.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a virtuális függvény-
+                </div>          
+                <div class="answer">
+                    - Polimorfikus viselkedést megvalósító függvény. <br>
+	                - A virtual kulcsszó segítségével kell bekapcsolni egy adott művelet többalakúságát.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az az overload-
+                </div>          
+                <div class="answer">
+                    - Olyan statikus többalakúság, ahol a metódus azonos névvel, de different paraméterrel rendelkezik.
+                    - Early binding, complie timeban.
+                    -Tehát Egy függvénynek több implementációja is lehetséges különböző paraméterlistával. <br>
+	                - Több azonos nevű, különböző szignatúrájú függvény. <br>
+	                - A függvényhívás aktuális paraméterei meghatározzák, hogy melyik függvény fog meghívódni.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    Mit jelent az absztrakt osztály?
+                </div>          
+                <div class="answer">
+                    -  Olyan speciális osztály melyet nem példányosíthatunk és rendelkezhet absztrakt adattagokkal vagy függvényekkel melyek működését implementáció során nem 		szükséges ismernünk és létrehozhatjuk őket torzs nélküli metódusként, amit majd leszármazott osztályai valósítanak meg. 
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a ternary operátor-
+                </div>          
+                <div class="answer">
+                    - Egyszerűsített feltételt lehet vele készíteni ugyanúgy mint az 'if'-el. <br>
+	                - Feltétel ? Érték1(true) : Érték2(false)
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mire való a finalize metódus-
+                </div>          
+                <div class="answer">
+                    - Ez a metódus akkor fog lefutni, amikor a garbagecollector felszabadítja a feleslegesnek ítélt memóriát, és egy adott objektum, amit már nem használunk, törlődni fog. <br>
+	                - Azt természetesen nem tudni, hogy mikor fog lefutni, vagy hogy le fog-e egyáltalán. <br>
+	                - A metódus célja az objektum által használt valamilyen erőforrás felszabadítása.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Milyen típusai lehetnek az argumentumoknak-
+                </div>          
+                <div class="answer">
+                    - Referencia: object <br>
+	                - Érték: int, float, double, string
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mire való a base kulcsszó-
+                </div>          
+                <div class="answer">
+                    
+	                - Elérést biztosít leszármazott osztályoknak az ős osztályhoz tartozó adattagokhoz és vagy metódusokhoz.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mire való az override-
+                </div>          
+                <div class="answer">
+                - Olyan dinamikus többalakúság, amelynél egy metódust felülírunk, viselkedését megváltoztatva.
+                -Dinamikus (Late binding) runtimeban történik.
+                - Egy osztályhierarchián belül az utódosztály újradefiniálja az ősosztály metódusát ha az overrideot tesz lehetővé (C# Virtual).
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az interface-
+                </div>          
+                <div class="answer">       
+	                - Viselkedésmódot definiál. Gyakorlatilag egy művelethalmaz deklarációját jelenti. <br>
+	                - Ha egy osztály implementál egy adott interfészt, akkor példányai az interfészben meghatározott viselkedéssel kell, hogy rendelkezzenek.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mit tudsz a hibakezelésről-
+                </div>          
+                <div class="answer">
+                    - Try-catch blokkal kezeljük melybe a try blokkba particionáljuk azon kód részleteket melyek később kivételt okozhatnak majd ezeket a catch blokkal 			
+                    kezeljük. Harmadik blokk a finally blokk, amely minden esetben lefut, ha oda írjuk.  
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a különbség az overload és az override között-
+                </div>          
+                <div class="answer">
+                    -overload statikus Early binding complie time, overriding dinamikus late binding runtime
+                    - Amíg a túlterheléssel ugyan azon metódus különböző implementációit érjük el paraméter lista alapján az felülírással megváltoztatjuk az adott függvény 		
+                    tulajdonságait.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az absztraktció-
+                </div>          
+                <div class="answer">           
+	                - Elvonatkoztatás. Segítségével privát implementációkat rejthetünk el egy nyilvános interfész mögé.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mik a hozzáférési módosítók-
+                </div>          
+                <div class="answer">                 
+	                - public: Elérhető bárhonnan. <br>
+	                - private: Csak az adott osztályon belül lehet elérni. <br>
+	                - protected: Elérhető az adott osztályon belül és a leszármazott osztályban. <br>
+	                - internal: Csak projecten belül érhető el. <br>  
+	                - protected internal: Csak projecten belül és a leszármazott osztályokban érhető el akár más projectekből is. <br>
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mire való a sealed módosító-
+                </div>          
+                <div class="answer">
+                    - Ezzel lehet megadni, hogy az adott osztályból nem lehet örököltetni.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Hogy hívható meg a base metódus anélkül, hogy egy példányt hoznánk létre-
+                </div>          
+                <div class="answer">
+                    - A leszármazott osztályban a „base” jelzővel hivatkozhatunk a metódusta.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a különbség a new és az override között-
+                </div>          
+                <div class="answer">
+                    - Az override-al felül tudjuk írni a base osztály metódusát, míg a new kulcsszóval elrejthetjük a metódust.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mik a különböző típusú konstruktorok-
+                </div>          
+                <div class="answer">
+                    - Default: Ez az alap üres konstruktor.
+	                - Copy: Másoló konstruktor ami paraméterként várja az osztálya típusát amin keresztül elér egy másik példányt aminek az értékeit lemásolja. <br>
+	                - Static: Ez fut le még példányosítás előtt. <br>
+	                - Private: Mikor létrehozunk egy belső osztályt ott használjuk ezt a típust. <br>
+	                - Paraméteres: Olyan konstruktor ami fogad paramétert. <br>
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a korai/késői kötés-
+                </div>          
+                <div class="answer">
+                    (Kötés-nek nevezzük azt a folyamatot, amikor a fordítóprogram a forráskód fordítása során felfedezett metódushívásokhoz konkrét metódust rendel.) <br>
+                    <br>
+                    - Korai: (static) <br>
+                        - - Az összerendelés fordítási időben történik, a fordítóprogram által. <br>
+                        - - Legfontosabb jellemzője, hogy oldhatatlan, megváltoztathatatlan kötés. <br>
+                    - Késői: (dynamic) <br>
+                        - - Futásidejű hozzárendelés.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az a this mutató-
+                </div>          
+                <div class="answer">
+	                - Ez a kulcsszó az adott osztályra utal, ezzel érhetjük el annak adattagjait és viselkedését módosító metódusait.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    Mi a különbség a struktúra és az osztály között?
+                </div>          
+                <div class="answer">
+                    - A struct lényegében egy lebutított osztály. Minden public benne. A stacken tárolódik és érték típusú. <br>
+	                - Az osztály referencia típusú és a heap-ben jön létre.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az alapértelmezett láthatósági módosító az osztályoknál-
+                </div>          
+                <div class="answer">
+                    - internal
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mit jelent az abstract függvény-
+                </div>          
+                <div class="answer">  
+	                - Azt a függvényt amit ezzel a kulcsszóval megjelölünk a leszármazott osztálynak kötelezően létre kell hoznia.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mely operátorokat nem lehet overloadolni-
+                </div>          
+                <div class="answer">
+                    - <b> ::</b>, <b> .</b>, <b> &&</b>, <b> ||</b>, stb..
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -A konstruktornak szüksége van paraméterre-
+                </div>          
+                <div class="answer">                  
+	                - Alapesetben a konstruktor üres és implicit hívódik példányosításkor, de adhatunk át vele paramétereket.	
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a másoló konstruktor-
+                </div>          
+                <div class="answer">
+                    - Paraméterként várja a saját típusát és új példányt készít a kapott példány adataiból.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mire való a virtual kulcsszó a metódus definiálásakor-
+                </div>          
+                <div class="answer">            
+	                - Ezzel jelöljük meg, hogy a leszármazott osztály felülírhatja a metódust.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Statikus metódus használhat nem statikus tagokat-
+                </div>          
+                <div class="answer">                  
+	                - Nem, csak ha van tudomása arról, hogy melyik példánány szeretnéd elérni.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az ősosztály(base) és az alosztály-
+                </div>          
+                <div class="answer">
+                    - Ősosztály: A legáltalánosabb osztály ami általában absztrakt. <br>
+	                - Alosztály: Belső osztály az osztályon belül. Csak az az osztály látja amin belül létre van hozva.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a statikus és dinamikus kötés-
+                </div>          
+                <div class="answer">
+                    (Kötés-nek nevezzük azt a folyamatot, amikor a fordítóprogram a forráskód fordítása során felfedezett metódushívásokhoz konkrét metódust rendel.) <br>
+                    <br>
+                    - Korai: (static) <br>
+                        - - Az összerendelés fordítási időben történik, a fordítóprogram által. <br>
+                        - - Legfontosabb jellemzője, hogy oldhatatlan, megváltoztathatatlan kötés. <br>
+                    - Késői: (dynamic) <br>
+                        - - Futásidejű hozzárendelés.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mennyi példányt lehet létrehozni az absztrakt osztályból-
+                </div>          
+                <div class="answer">
+                    - Semennyit! Az absztrakt osztály nem példányosítható!
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    Mi az alapértelmezett láthatósági módosító az osztályokon belül?
+                </div>          
+                <div class="answer">
+                    -privát
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Milyen fogalmakat használunk az OOP-ben mikor az újrafelhasználásról beszélünk-
+                </div>          
+                <div class="answer">
+                    - Öröklődés, override, virtual stb..
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Különbség a shallow és a deep copy között-
+                </div>          
+                <div class="answer">
+                    - Shallow: Lemásolja az adott objektumot. Referencia lesz. <br>
+	                - Deep: Lemásolja az objektum értékét. Két különböző, de azonos értékű objektum lesz így.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Különbség a stack és a heap között-
+                </div>          
+                <div class="answer">
+                    - A heap nagyobb területet foglal el a memóriában mint a stack. <br>
+	                - A stackben a primitívek tárolódnak míg a heap-en az objektumok. A stackben csak az objektum referenciája tárolódik. <br>
+	                - A stack a heaphez képest egy nagyon gyors memóriaterület. <br>
+	                - Stack (LIFO - Last In First Out): Az jön ki legutoljára amelyik legelőször belekerült. <br>
+	                - Heap (FIFO - First In First Out): Az jön ki belőle legelőször amelyik legelőször belekerült.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az a nullable-
+                </div>          
+                <div class="answer">
+                    - Minden változónak van egy alap értéke amire inicializálódik ha nem adunk neki értéket. <br>
+	                - Pl.: a bool alapból false értéket vehet fel, de ha nullable-re állítjuk akkor a null-t is felveheti értékként. <br>
+	                - bool? valtozo;
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Különbség lista és tömb között-
+                </div>          
+                <div class="answer">
+                    - A tömbnek létrehozáskor meg kell mondani, hogy mennyi elem férhet bele, a listának nem. <br>
+	                - A tömb mérete statikus a listáé dinamikus.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Referencia és érték közötti különbség-
+                </div>          
+                <div class="answer">            
+	                - Ha egy változó egy másiknak a referenciája akkor ha az egyik értéke megváltozik mindkettő megváltozik <br>
+	                - Érték típusnál ugyanekkor csak felveszi a másik változó értékét és változtatás után csak az egyik változik meg.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Hogyan hoznál létre egy új érték típust-
+                </div>          
+                <div class="answer">
+                    - Ezt a structal lehet megtenni.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Hogyan hoznál létre egy új referencia típust-
+                </div>          
+                <div class="answer">
+                    - Ezt a class-el lehet megtenni.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Lehet overload/override-olni statikus metódust-
+                </div>          
+                <div class="answer">
+                    - Nem lehet!!
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mire való a finally kulcsszó-
+                </div>          
+                <div class="answer">
+                    - A try/catch ág után írhatjuk, ha van valami amit szeretnénk ha mindenféleképpen lefutna.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mit jelent az, hogy immutable-
+                </div>          
+                <div class="answer">
+	                - Megváltoztathatatlan típust jelent. <br> 
+	                - Azaz ha új értéket adunk neki, az értéke nem felülíródik hanem egy új objektum jön létre egy új memória címen.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi az assembly-
+                </div>          
+                <div class="answer">
+                    - Szimbolikus gépi kód. <br>
+	                - Minden programozási nyelv ezt állítja elő végeredményként. <br>
+	                - Ebből készül a gépi kód amit a processzor értelmezni tud.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mit jelent az, hogy szoros/lazán csatolás-
+                </div>          
+                <div class="answer">
+                    - Szoros: Az objektumok csoportja nagymértékben függ egymástól. <br>
+	                - Lazán:  Mikor az objektum a többitől függetlenül működik. <br>
+		            - - Interfésszel lehet elérni. <br>
+		            - - Az osztályok konkrét osztályok helyett inkább interfészeken keresztül kommunikálnak.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a property-
+                </div>          
+                <div class="answer">
+                    - Adat tag aminek nincs gettere és szettere.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a field/autoproperty-
+                </div>          
+                <div class="answer">
+                    - Olyan property ami rendelkezik getterrel és szetterrel.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mik a primitívek-
+                </div>          
+                <div class="answer">
+                    - byte, short, int, long, float, double, char, bool <br>
+	                - Kis betűvel írandók!
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Hogy jelölhetek meg egy objektumot a garbage collectornak, hogy azt tüntesse el-
+                </div>          
+                <div class="answer">
+                    - A null kulcsszóval.
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Hogy működik a garbage collector-
+                </div>          
+                <div class="answer">
+                    - Arra való, hogy erőforrást szabadítson fel olyan objektumokon amikre már nincs referencia. <br>
+	                - Időről időre ellenőrzi a programot amire van referencia azt egy másik szintre helyezi amit ritkábban fog ellenőrizni. <br>
+	                - Ezeket a szinteket hívjuk generációnak.
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Hogyan oldanád meg, hogy egy property egy metódus értékével rendelkezzen-
+                </div>          
+                <div class="answer">
+                    - A getteren belül a return kulcsszóval.
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Implicit és Explicit castolás közti különbség-
+                </div>          
+                <div class="answer">
+                    - Implicit: Mikor kisebb méretű típust castolok egy nagyobb méretű típusra. Nincs adatvesztés <br>
+	                - Explicit: Mikor egy nagyobb méretű típust castolok egy kisebb méretű típusra. Van adatvesztés.
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Mit jelent és miért jó a generikus lista/tömb-
+                </div>          
+                <div class="answer">
+                    - Azt, hogy a lista/tömb csak egy fajta típusú adatot képes tárolni.
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    - Ha egy osztály kiterjeszt 2 interfészt és a két interfész rendelkezik egy ugyanolyan metódussal, <br>
+                     hogy határozod meg, hogy mikor melyik fusson le?
+                </div>          
+                <div class="answer">
+                    - InterfészNév.Metódus()
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Mi a különbség az absztrakt osztály és az interfész között-
+                </div>          
+                <div class="answer">
+                    - Az interfész metódusainak nem lehet törzse. <br>
+                    - Egy osztály kiterjeszthet több interfészt is míg örökölni csak egyszer tud és csak egy osztálytól.
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Ha a leszármazott osztály override-ol egy publikus függvényt megváltozhat-e a láthatósági módosítója-
+                </div>          
+                <div class="answer">
+                    - Nem
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Mire való a readonly kulcsszó-
+                </div>          
+                <div class="answer">
+                    - Csak olvasható lesz ezzel a kulcsszóval a változó. <br>
+	                - Az értékét inicializáláskor lehet megadni, vagy futásidőben lehet még módosítani konstruktorban.
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Hogy definiálsz konstanst-
+                </div>          
+                <div class="answer">
+                    - A const kulcsszóval. <br>
+	                - Arra való, hogy az ezzel megjelölt változó csak egyszer kaphat értéket, akkor mikor inicializálódik.
+                </div>
+                
+            </li>
+
+            <li>
+        
+                <div class="question">
+                    -Mi a Singleton pattern-
+                </div>          
+                <div class="answer">
+                    - Lényege, hogy az adott osztályunknak maximum egy példánya lehet. <br>
+                    - Ezt úgy érjük el, hogy megakadályozzuk, hogy a new kulcsszóval példányosítani lehessen. <br>
+                    - Ellenben egy publikus interfészen keresztül lehetővé tesszük ennek az egy példánynak a létrehozását és elérését. <br>
+                    - Erre egy statikus metódust fogunk használni, hiszen az példányosítás nélkül is rendelkezésünkre áll. <br>
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Mi az Iterator-
+                </div>          
+                <div class="answer">
+                    - Be lehet vele járni egy adott objektumot.
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Mi az enum-
+                </div>          
+                <div class="answer">            
+	                - Lényegében egy felsorolás. <br>
+	                - Biztosítani tudjuk vele, hogy csak olyan elemeket várunk mondjuk egy metódusban amik az enumban is szerepelnek.
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -SOLID elvek-
+                </div>          
+                <div class="answer">
+                    - Single Responsibility Principle (Egy felelősség elve) <br>
+                    - - Egy osztály vagy modul egy, és csak egy felelősséggel rendelkezzen (azaz: egy oka legyen a változásra). <br>
+                    <br>
+	                - Open/Closed Principle (Nyílt/zárt elv) <br>
+		            - - Egy osztály vagy modul, legyen nyílt a kiterjesztésre, de zárt a módosításra. <br>
+                    <br>
+	                - Liskov substitution principle (Liskov helyettesítési elv) <br>
+		            - - Minden osztály legyen helyettesíthető a leszármazott osztályával anélkül, hogy a program helyes működése megváltozna. <br>
+                    <br>
+	                - Interface segregation principle (Interface elválasztási elv) <br>
+		            - - Több specifikus interface jobb, mint egy általános. <br>
+                    <br>
+	                - Dependency inversion principle (Függőség megfordítási elv) <br>
+		            - - A kódod függjön absztrakcióktól, ne konkrét implementációktól. 
+                </div>
+                
+            </li>
+            <li>
+        
+                <div class="question">
+                    -Mire jó a ref kulcsszó-
+                </div>          
+                <div class="answer">
+                    - A ref kulcsszó azt az értéket jelzi, amelyet referenciaként adnak át. <br>
+	                - Inicializálni kell előtte az argumentumot.
+                </div>
+                
+            </li>   
+
+            <li>
+        
+                <div class="question">
+                    -Mire jó az out kulcsszó-
+                </div>          
+                <div class="answer">
+                    - Ezzel az argumentumok referenciaként kerülnek továbbításra. <br>
+	                - A paraméter bármely művelete az argumentumon történik. <br>
+	                - Az argumentumot nem kell előtte inicializálni. <br>
+                </div>
+                
+            </li>  
+
+            
+        </ul>
+        
+        
+    </div>
+
+
+</body>
+</html>
+
